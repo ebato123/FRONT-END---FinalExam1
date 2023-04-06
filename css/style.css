@@ -1,0 +1,1146 @@
+/** HEAD **/
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+
+/** GENERAL RULES **/
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-size: 16px;
+  font-family: "Be Vietnam Pro", Arial, Helvetica, sans-serif;
+  list-style: none;
+}
+
+.boton-primario {
+  width: 134px;
+  height: 44px;
+
+  background: #8b48bf;
+  border-radius: 50px;
+  color: white;
+
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+/** Para DISPOSITIVOS de 380px en adelante**/
+@media (min-width: 380px) {
+  /** BODY **/
+
+  body {
+    width: 100vw;
+    height: 100%;
+  }
+
+  /**------------------------- HEADER -------------------------**/
+
+  body header {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+
+    z-index: 80;
+    background-color: white;
+  }
+
+  /** HEADER NAV **/
+  body header nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  /** HEADER NAV ARTICLES **/
+
+  /** sec1 **/
+  body header nav article#sec1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 100%;
+    order: 0;
+  }
+
+  /** sec2 **/
+  body header nav article#sec2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 100%;
+    order: 1;
+  }
+
+  body header nav article#sec2 input#menu-hamb {
+    display: none;
+  }
+
+  body header nav article#sec2 label i {
+    font-size: 40px;
+  }
+
+  body header nav article#sec2 ul.items-header {
+    display: none;
+  }
+
+  /** sec3 **/
+  body header nav article#sec3 {
+    display: none;
+  }
+
+  body div#false-header {
+    width: 100%;
+    height: 180px;
+  }
+
+  /**------------------------- MAIN -------------------------**/
+
+  body main {
+    width: 100%;
+    height: 100%;
+  }
+
+  /**------- SECCION-1 -------**/
+  body main section.seccion-1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 15%;
+
+    align-items: center;
+
+    width: 100%;
+    height: 900px;
+  }
+
+  /**--- SEC1 ---**/
+  body main section.seccion-1 article#sec1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 50%;
+  }
+
+  body main section.seccion-1 article#sec1 div#img-logo {
+    background-image: url(/img/padel-intro.png);
+    background-size: cover;
+
+    width: 400px;
+    height: 341.53px;
+  }
+
+  /**--- SEC2 ---**/
+  body main section.seccion-1 article#sec2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 50%;
+  }
+
+  body main section.seccion-1 article#sec2 div#container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    width: 85%;
+    height: 100%;
+  }
+
+  body main section.seccion-1 article#sec2 h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 114.6%;
+    text-align: end;
+    align-items: center;
+
+    color: #232c50;
+  }
+
+  body main section.seccion-1 article#sec2 h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.5584px;
+    line-height: 157.1%;
+
+    align-items: center;
+    text-align: right;
+
+    color: #000000;
+  }
+
+  body main section.seccion-1 article#sec2 a {
+  }
+
+  /**------- SECCION-2 -------**/
+  body main section.seccion-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 306px;
+    padding: 8%;
+    margin-bottom: 15%;
+
+    background-color: #3cddf3;
+  }
+
+  /**--- SEC1 ---**/
+  body main section.seccion-2 article#sec1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  body main section.seccion-2 article#sec1 h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 114.6%;
+
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+  }
+
+  /**--- SEC2 ---**/
+  body main section.seccion-2 article#sec2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  body main section.seccion-2 article#sec2 p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 151.1%;
+
+    align-items: center;
+
+    color: #ffffff;
+  }
+
+  /**------- SECCION-3 -------**/
+  body main section.seccion-3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    width: 100%;
+    height: 682px;
+  }
+
+  /**--- SECC3 ---**/
+  body main section.seccion-3 article.recuadros-secc3 {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 90%;
+    height: 33.3%;
+  }
+
+  /**--- SECC3 subsec ---**/
+  body main section.seccion-3 article.recuadros-secc3 article.subsec {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    color: black;
+    background: rgba(139, 72, 191, 0.3);
+    border-radius: 50px 0px 0px 50px;
+
+    width: 100%;
+    height: 43px;
+  }
+
+  body main section.seccion-3 article.recuadros-secc3 article.subsec div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 69px;
+    height: 43px;
+
+    color: white;
+    background: #8b48bf;
+    border-radius: 30px;
+  }
+
+  body main section.seccion-3 article.recuadros-secc3 article.subsec h4 {
+    position: relative;
+    right: 20%;
+  }
+
+  /**--- SECC3 subsec2 ---**/
+  body main section.seccion-3 article.recuadros-secc3 article.subsec2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.2984px;
+    line-height: 26px;
+
+    align-items: center;
+    letter-spacing: -0.01em;
+
+    color: #b3b2b7;
+  }
+
+  /**------- SECCION-4 -------**/
+  body main section.seccion-4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    height: 578px;
+    margin-bottom: 15%;
+  }
+
+  /**--- SEC1 ---**/
+  body main section.seccion-4 article#sec1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 90%;
+    height: 170px;
+  }
+
+  /**--- IMGs ---**/
+  body main section.seccion-4 img {
+    display: none;
+  }
+
+  body main section.seccion-4 img#lebron {
+    display: block;
+    position: relative;
+
+    top: 6%;
+  }
+
+  body main section.seccion-4 article#sec1 h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39.2143px;
+    line-height: 156.6%;
+    text-align: center;
+
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #242e53;
+  }
+
+  /**--- SEC2 ---**/
+  body main section.seccion-4 article#sec2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fafafa;
+
+    width: 90%;
+    height: 219px;
+  }
+
+  body main section.seccion-4 article#sec2 article#subsec {
+    width: 100%;
+    height: 100%;
+  }
+
+  body main section.seccion-4 article#sec2 article#subsec article.cuadros {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  body main section.seccion-4 article#sec2 article#subsec article#cuadro-1 {
+    display: none;
+  }
+
+  body main section.seccion-4 article#sec2 article#subsec article#cuadro-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+  }
+
+  body main section.seccion-4 article#sec2 article#subsec article#cuadro-2 h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.0714px;
+    line-height: 156.6%;
+
+    align-items: center;
+    letter-spacing: -0.01em;
+
+    color: #3f4868;
+  }
+
+  body main section.seccion-4 article#sec2 article#subsec article#cuadro-2 p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 156.6%;
+
+    align-items: center;
+    text-align: center;
+
+    color: #b9b9c1;
+  }
+
+  body main section.seccion-4 article#sec2 article#subsec article#cuadro-3 {
+    display: none;
+  }
+
+  /**--- SEC3 ---**/
+  body main section.seccion-4 article#sec3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 90%;
+    height: 89px;
+  }
+
+  /**------- SECCION-5 -------**/
+  body main section.seccion-5 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    background-color: #3cddf3;
+
+    width: 100%;
+    height: 366px;
+  }
+
+  body main section.seccion-5 article#sec1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  body main section.seccion-5 article#sec1 h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.005em;
+
+    color: #ffffff;
+  }
+
+  body main section.seccion-5 article#sec1 a button {
+    background-color: #232c50;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  }
+
+  /**------------------------- FOOTER -------------------------**/
+
+  body footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1e1e26;
+
+    width: 100%;
+    height: 534.71px;
+  }
+
+  /**------- SECCION-FOOTER -------**/
+  body footer section.seccion-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  /**--- SEC1 ---**/
+  body footer section.seccion-footer section#sec1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    order: 2;
+
+    width: 100%;
+    height: 25%;
+  }
+
+  body footer section.seccion-footer section#sec1 img {
+  }
+
+  body footer section.seccion-footer section#sec1 ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 70%;
+  }
+
+  /**--- SEC2 ---**/
+  body footer section.seccion-footer section#sec2 {
+    order: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 35%;
+  }
+
+  body footer section.seccion-footer section#sec2 ul {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  body footer section.seccion-footer section#sec2 ul li {
+    margin-top: 12%;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  /**--- SEC3 ---**/
+  body footer section.seccion-footer section#sec3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    order: 0;
+
+    width: 100%;
+    height: 25%;
+  }
+
+  body footer section.seccion-footer section#sec3 form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 80px;
+  }
+
+  body footer section.seccion-footer section#sec3 form input {
+    padding: 10px;
+    gap: 10px;
+
+    width: 308px;
+    height: 44px;
+
+    background: #ffffff;
+    border-radius: 50px;
+  }
+
+  body footer section.seccion-footer section#sec3 form button {
+    padding: 10px;
+    gap: 10px;
+
+    width: 63px;
+    height: 42px;
+
+    background: #8b48bf;
+    border-radius: 50px;
+
+    color: white;
+    margin-left: 5%;
+  }
+
+  /**--- SEC4 ---**/
+  body footer section.seccion-footer section#sec4 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    order: 3;
+
+    width: 100%;
+    height: 15%;
+  }
+
+  body footer section.seccion-footer section#sec4 p {
+    font-weight: 500;
+    font-size: 12.5px;
+    line-height: 18px;
+    align-items: center;
+
+    color: #8c8c94;
+  }
+
+  /** Para DISPOSITIVOS de 1355px en adelante**/
+  @media (min-width: 1355px) {
+    /** BODY **/
+
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    /**------------------------- HEADER -------------------------**/
+
+    body header {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      width: 100%;
+      height: 174px;
+    }
+
+    /** HEADER NAV **/
+    body header nav {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      width: 100%;
+      height: 100%;
+    }
+
+    /** HEADER NAV ARTICLES **/
+
+    /** sec1 **/
+    body header nav article#sec1 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      order: 0;
+
+      width: 33.3%;
+      height: 100%;
+    }
+
+    /** sec2 **/
+    body header nav article#sec2 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      order: 1;
+
+      width: 33.4%;
+      height: 100%;
+    }
+
+    body header nav article#sec2 input#menu-hamb {
+      display: none;
+    }
+
+    body header nav article#sec2 label i {
+      display: none;
+    }
+
+    body header nav article#sec2 ul.items-header {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      width: 100%;
+      height: auto;
+    }
+
+    body header nav article#sec2 ul.items-header li a {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 176.1%;
+
+      color: #242e52;
+      text-decoration: none;
+    }
+    /** sec3 **/
+    body header nav article#sec3 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      order: 2;
+
+      width: 33.3%;
+      height: 100%;
+    }
+
+    body div#false-header {
+      width: 100%;
+      height: 180px;
+    }
+
+    /**------------------------- MAIN -------------------------**/
+
+    body main {
+      width: 100%;
+      height: 100%;
+    }
+
+    /**------- SECCION-1 -------**/
+    body main section.seccion-1 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 5%;
+
+      width: 100%;
+      height: 470px;
+    }
+
+    /**--- SEC1 ---**/
+    body main section.seccion-1 article#sec1 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+
+      padding-right: 10%;
+      width: 50%;
+      height: 100%;
+
+    }
+
+    body main section.seccion-1 article#sec1 div#img-logo {
+      background-image: url(/img/padel-intro.png);
+      background-size: cover;
+
+      width: 540px;
+      height: 461.07px;
+    }
+
+    /**--- SEC2 ---**/
+    body main section.seccion-1 article#sec2 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+
+      padding-right: 10%;
+      width: 50%;
+      height: 100%;
+    }
+
+    body main section.seccion-1 article#sec2 div#container-1 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 5%;
+      width: 100%;
+      height: 100%;
+    }
+
+    body main section.seccion-1 article#sec2 a {
+      margin-left: 15%;
+    }
+
+    /**------- SECCION-2 -------**/
+  body main section.seccion-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 100%;
+    height: 168px;
+    margin-bottom: 0%;
+
+    background-color: #8B48BF;
+  }
+
+  /**--- SEC1 ---**/
+  body main section.seccion-2 article#sec1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 100%;
+  }
+
+  body main section.seccion-2 article#sec1 h3 {
+    margin: 5%;
+  }
+
+  /**--- SEC2 ---**/
+  body main section.seccion-2 article#sec2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 100%;
+  }
+
+  body main section.seccion-2 article#sec2 p {
+    margin: 5%;
+  }
+  /**------- SECCION-3 -------**/
+  body main section.seccion-3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 100%;
+    height: 682px;
+
+    background-color: #FAFAFA;;
+  }
+
+  /**--- SECC3 ---**/
+  body main section.seccion-3 article.recuadros-secc3 {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 5%;
+    width: 50%;
+    height: 33.3%;
+  }
+
+  body main section.seccion-3 article#sec3 {
+    align-self: center;
+
+    margin-top: 0%;
+    margin-left: 25%;
+    width: 50%;
+  }
+
+  /**--- SECC3 subsec ---**/
+  body main section.seccion-3 article.recuadros-secc3 article.subsec {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+
+    color: black;
+    background: #FAFAFA;
+    border-radius: 50px 0px 0px 50px;
+
+    margin-left: -2%;
+    margin-right: 15%;
+    width: 100%;
+    height: 43px;
+  }
+
+  body main section.seccion-3 article.recuadros-secc3 article.subsec div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 69px;
+    height: 43px;
+
+    color: white;
+    background: #8b48bf;
+    border-radius: 30px;
+  }
+
+  body main section.seccion-3 article.recuadros-secc3 article.subsec h4 {
+    
+
+    width: 50%;
+    height: 60%;
+
+    margin-left: 8%;
+    padding: 0%;
+  }
+
+  /**--- SECC3 subsec2 ---**/
+  body main section.seccion-3 article.recuadros-secc3 article.subsec2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.2984px;
+    line-height: 26px;
+
+    align-items: center;
+    letter-spacing: -0.01em;
+
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #b3b2b7;
+  }
+
+  /**------- SECCION-4 -------**/
+  body main section.seccion-4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    height: 578px;
+    margin-bottom: 15%;
+  }
+
+  /**--- SEC1 ---**/
+  body main section.seccion-4 article#sec1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    height: 170px;
+  }
+
+  /**--- IMGs ---**/
+  body main section.seccion-4 img {
+    display: none;
+  }
+
+  body main section.seccion-4 img#lebron {
+  display: none;
+  }
+
+  body main section.seccion-4 article#sec1 h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39.2143px;
+    line-height: 156.6%;
+    text-align: center;
+
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #242e53;
+  }
+
+  /**--- SEC2 ---**/
+  body main section.seccion-4 article#sec2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    background-color: #fafafa;
+
+    width: 90%;
+    height: 319px;
+  }
+
+  body main section.seccion-4 article#sec2 article#subsec {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+      
+    width: 100%;
+    height: 100%;
+  }
+
+  body main section.seccion-4 article#sec2 article#subsec article.cuadros {
+    display: flex;
+
+    width: 33.3%;
+    height: 100%;
+
+    margin-top: 3.5%;
+  }
+  body main section.seccion-4 article#sec2 article#subsec article.cuadros h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.0714px;
+    line-height: 156.6%;
+
+    align-items: center;
+    letter-spacing: -0.01em;
+
+    text-align: center;
+
+    margin-top: 5%;
+    color: #3f4868;
+  }
+
+  body main section.seccion-4 article#sec2 article#subsec article.cuadros p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 156.6%;
+
+    align-items: center;
+    text-align: center;
+
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #b9b9c1;
+  }
+
+  body main section.seccion-4 article#sec2 article#subsec article#cuadro-1 {
+    display: initial;
+
+    width: 33.3%;
+    height: 100%;
+    order: 0;
+  }
+  body main section.seccion-4 article#sec2 article#subsec article#cuadro-2 {
+    display: initial;
+
+    width: 33.3%;
+    height: 100%;
+    order: 0;
+
+    margin-top: 1.3%;
+    padding: 0%;
+  }
+
+  body main section.seccion-4 article#sec2 article#subsec article#cuadro-3 {
+    display: initial;
+
+    width: 33.3%;
+    height: 100%;
+    order: 0;
+  }
+
+  /**--- SEC3 ---**/
+  body main section.seccion-4 article#sec3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 90%;
+    height: 89px;
+  }
+  /**------- SECCION-5 -------**/
+  body main section.seccion-5 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    background-color: #8B48BF;
+
+    width: 100%;
+    height: 224px;
+  }
+
+  body main section.seccion-5 article#sec1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  body main section.seccion-5 article#sec1 h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.005em;
+
+    color: #ffffff;
+  }
+
+  body main section.seccion-5 article#sec1 a button {
+    background-color: #232c50;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  }
+
+  }
+}
